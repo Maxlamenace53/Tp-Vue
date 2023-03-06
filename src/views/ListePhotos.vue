@@ -1,28 +1,13 @@
 <script setup>
 
 import ForOnePhoto from '../components/ForOnePhoto.vue';
-import { onMounted, ref } from 'vue';
 
-const objetImages = ref([]);
-
+import { usephotoStore } from '../stores/photo';
 
 
-onMounted(ChargerImage);
+const photoStore = usephotoStore();
 
-
-async function ChargerImage() {
-  try {
-    const resp = await fetch('https://jsonplaceholder.typicode.com/photos');
-    const result = await resp.json();
-
-    objetImages.value = result;
-  }
-
-  catch (err) {
-    console.error(err);
-  }
-}
-
+const objetImages = photoStore.objetImages;
 
 
 </script>
@@ -37,8 +22,7 @@ async function ChargerImage() {
     <h1>Liste des photos</h1>
   </header>
   <main>
-    <button @click="ChargerImage"> Actualiser page</button>
-    <ForOnePhoto v-for="objetImage of objetImages" :key="objetImage.id" :objet-image="objetImage" />
+    <ForOnePhoto v-for="objetImage of objetImages.slice(0,10)" :key="objetImage.id" :objet-image="objetImage" />
 
 
   </main>

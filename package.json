@@ -15,5 +15,18 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
     "vite": "^4.0.0"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxlamenace53/Tp-Vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxlamenace53/Tp-Vue/issues"
+  },
+  "homepage": "https://github.com/Maxlamenace53/Tp-Vue#readme",
+  "keywords": []
 }
