@@ -7,12 +7,12 @@ Projet : Application Photos
 
 //Afficher toutes les photos dans un composant :
 
-Afficher l'image
-Afficher le titre, dont le template pour être modifié par le parent
+//Afficher l'image
+//Afficher le titre, dont le template pour être modifié par le parent
 Afficher un bouton "Supprimer", qui déclenchera la suppression ; attention, la suppression n'est pas à faire dans ce composant !
-Utiliser le gestionnaire d'états Pinia pour gérer les photos.
+//Utiliser le gestionnaire d'états Pinia pour gérer les photos.
 
-Le fetch peut être fait dans ce gestionnaire (ou pas)
+//Le fetch peut être fait dans ce gestionnaire (ou pas)
 La fonction de suppression peut être faite dans ce gestionnaire (ou pas)
 
 
